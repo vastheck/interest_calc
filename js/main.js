@@ -43,17 +43,17 @@ switch (freq) {
 		year = time;
 	break;
 }
-//Single intrest
+//Single interest
 if ($("#single" ).hasClass("active")) {
-var intrest = principal*rate*year;
-var intrest_round = Math.round(intrest * 100) / 100;
-var total = +principal+ +intrest;
+var interest = principal*rate*year;
+var interest_round = Math.round(interest * 100) / 100;
+var total = +principal+ +interest;
 var total_round = Math.round(total * 100) / 100;
-$("#intrest").text("Your intrest will be "+intrest_round+".");
+$("#intrest").text("Your interest will be "+interest_round+".");
 $("#total").text("The total amount will be "+total_round+".");
 
 } else {
-//Compound intrest
+//Compound interest
 switch (comp_freq) {
 	
 	case "annual":
@@ -77,9 +77,9 @@ var exp = year*compounding;
 var sum2 = Math.pow(sum1, exp);
 var total = sum2*principal;
 var total_round = Math.round(total * 100) / 100;
-var intrest = total-principal;
-var intrest_round = Math.round(intrest * 100) / 100;
-$("#intrest").text("Your intrest will be "+intrest_round+".");
+var interest = total-principal;
+var interest_round = Math.round(interest * 100) / 100;
+$("#intrest").text("Your interest will be "+interest_round+".");
 $("#total").text("The total amount will be "+total_round+".");
 }
 }); 
