@@ -43,7 +43,7 @@ body {
     border-bottom: 1px solid black;
 }
 .container {
-    margin-top: 80px;
+    margin-top: 5vh;
 }
 label {
     font-size: 18px;
@@ -85,5 +85,8 @@ h3 {
     }
     .btn-group button {
         width: 100%;
+    }
+    #calc {
+    margin-top: 10px;
     }
 }
