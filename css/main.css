@@ -1,0 +1,89 @@
+
+/*Buttons*/
+.btn-group button, #calc {
+    background-color: transparent;
+    border: 1px solid #541F05; 
+    color: white; 
+    padding: 10px 24px; 
+    cursor: pointer;
+    float: left; 
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.btn-group button:first-child {
+    margin-right: 5px
+}
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:hover, #calc:hover {
+    background-color: #E5A96F;
+}
+#calc:hover {
+    background-color: #E5A96F !important;
+}
+.active {
+    background-color: #541F05 !important;
+}
+/*END Buttons*/
+
+body { 
+  background: url(../background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header {
+    background-color: rgba(137, 67, 36, .3);
+    border-bottom: 1px solid black;
+}
+.container {
+    margin-top: 100px;
+}
+label {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+#result {
+    margin-top: 100px;
+}
+#form {
+    width: 50%;
+}
+#calc {
+    margin-top: 20px;
+}
+h3 {
+    color: white !important;
+}
+.disable {
+    opacity: 0.5 !important;
+}
+/*Adjuctments for smaller screens*/
+@media (max-width: 991px) {
+    #form {
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+    #form {
+        width: 100%;
+    }
+    .container {
+        margin-top: 20px;
+    }
+    .btn-group {
+        display: flex !important;
+        justify-content: center;
+    }
+    .btn-group button {
+        width: 100%;
+    }
+}
